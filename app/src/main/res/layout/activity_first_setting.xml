@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstSetting">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="-116dp">
+
+        <ImageView
+            android:id="@+id/h_top"
+            android:layout_width="380sp"
+            android:layout_height="700sp"
+            android:background="@drawable/gray_bg1"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/h_faceimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/faceimage"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/h_top"
+            app:layout_constraintEnd_toEndOf="@+id/h_top"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/h_top"
+            app:layout_constraintTop_toTopOf="@+id/h_top"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/setting"
+            app:layout_constraintBottom_toBottomOf="@+id/h_top"
+            app:layout_constraintEnd_toEndOf="@+id/h_top"
+            app:layout_constraintHorizontal_bias="0.611"
+            app:layout_constraintStart_toStartOf="@+id/h_top"
+            app:layout_constraintTop_toTopOf="@+id/h_top"
+            app:layout_constraintVertical_bias="0.194" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dgm"
+            android:text="초기설정"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/h_top"
+            app:layout_constraintEnd_toEndOf="@+id/h_top"
+            app:layout_constraintHorizontal_bias="0.01"
+            app:layout_constraintStart_toStartOf="@+id/h_top"
+            app:layout_constraintTop_toTopOf="@+id/h_top"
+            app:layout_constraintVertical_bias="0.007" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dgm"
+            android:text="닉네임"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/h_top"
+            app:layout_constraintEnd_toEndOf="@+id/h_top"
+            app:layout_constraintHorizontal_bias="0.103"
+            app:layout_constraintStart_toStartOf="@+id/h_top"
+            app:layout_constraintTop_toTopOf="@+id/h_top"
+            app:layout_constraintVertical_bias="0.343" />
+
+        <EditText
+            android:id="@+id/h_nickname"
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:layout_marginBottom="380dp"
+            android:autofillHints="username"
+            android:background="@drawable/input_text"
+            android:contentDescription="@string/id"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="@+id/h_top"
+            app:layout_constraintEnd_toEndOf="@+id/h_top"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintStart_toStartOf="@+id/h_top"
+            app:layout_constraintTop_toTopOf="@+id/h_top"
+            app:layout_constraintVertical_bias="0.796"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dgm"
+            android:text="목표 한마디"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/h_top"
+            app:layout_constraintEnd_toEndOf="@+id/h_top"
+            app:layout_constraintHorizontal_bias="0.109"
+            app:layout_constraintStart_toStartOf="@+id/h_top"
+            app:layout_constraintTop_toTopOf="@+id/h_top"
+            app:layout_constraintVertical_bias="0.429" />
+
+        <EditText
+            android:id="@+id/h_goalComment"
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:layout_marginBottom="380dp"
+            android:autofillHints="username"
+            android:background="@drawable/input_text"
+            android:contentDescription="@string/id"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="@+id/h_top"
+            app:layout_constraintEnd_toEndOf="@+id/h_top"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintStart_toStartOf="@+id/h_top"
+            app:layout_constraintTop_toTopOf="@+id/h_top"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="LabelFor" />
+
+        <ImageView
+            android:id="@+id/h_nickname_box"
+            android:layout_width="350sp"
+            android:layout_height="140sp"
+            android:background="@drawable/line_box3"
+            app:layout_constraintBottom_toBottomOf="@+id/h_top"
+            app:layout_constraintEnd_toEndOf="@+id/h_top"
+            app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintStart_toStartOf="@+id/h_top"
+            app:layout_constraintTop_toTopOf="@+id/h_top"
+            app:layout_constraintVertical_bias="0.364" />
+
+        <ImageView
+            android:id="@+id/h_kisa_box"
+            android:layout_width="350sp"
+            android:layout_height="200sp"
+            android:background="@drawable/line_box4"
+            app:layout_constraintBottom_toBottomOf="@+id/h_top"
+            app:layout_constraintEnd_toEndOf="@+id/h_top"
+            app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintStart_toStartOf="@+id/h_top"
+            app:layout_constraintTop_toTopOf="@+id/h_top"
+            app:layout_constraintVertical_bias="0.726" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dgm"
+            android:text="기사자격증:"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/h_top"
+            app:layout_constraintEnd_toEndOf="@+id/h_top"
+            app:layout_constraintHorizontal_bias="0.109"
+            app:layout_constraintStart_toStartOf="@+id/h_top"
+            app:layout_constraintTop_toTopOf="@+id/h_top"
+            app:layout_constraintVertical_bias="0.583" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dgm"
+            android:text="기사년도:"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/h_top"
+            app:layout_constraintEnd_toEndOf="@+id/h_top"
+            app:layout_constraintHorizontal_bias="0.104"
+            app:layout_constraintStart_toStartOf="@+id/h_top"
+            app:layout_constraintTop_toTopOf="@+id/h_top"
+            app:layout_constraintVertical_bias="0.666" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dgm"
+            android:text="기사회차:"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/h_top"
+            app:layout_constraintEnd_toEndOf="@+id/h_top"
+            app:layout_constraintHorizontal_bias="0.104"
+            app:layout_constraintStart_toStartOf="@+id/h_top"
+            app:layout_constraintTop_toTopOf="@+id/h_top"
+            app:layout_constraintVertical_bias="0.75" />
+
+        <EditText
+            android:id="@+id/h_Kisaname"
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:layout_marginBottom="380dp"
+            android:autofillHints="username"
+            android:background="@drawable/input_text"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="@+id/h_top"
+            app:layout_constraintEnd_toEndOf="@+id/h_top"
+            app:layout_constraintHorizontal_bias="0.7"
+            app:layout_constraintStart_toStartOf="@+id/h_top"
+            app:layout_constraintTop_toTopOf="@+id/h_top"
+            app:layout_constraintVertical_bias="1.38"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/h_Kisayear"
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:layout_marginBottom="380dp"
+            android:autofillHints="username"
+            android:background="@drawable/input_text"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="@+id/h_top"
+            app:layout_constraintEnd_toEndOf="@+id/h_top"
+            app:layout_constraintHorizontal_bias="0.701"
+            app:layout_constraintStart_toStartOf="@+id/h_top"
+            app:layout_constraintTop_toTopOf="@+id/h_top"
+            app:layout_constraintVertical_bias="1.58"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/h_Kisaturn"
+            android:layout_width="200sp"
+            android:layout_height="40sp"
+            android:layout_marginBottom="380dp"
+            android:autofillHints="username"
+            android:background="@drawable/input_text"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="@+id/h_top"
+            app:layout_constraintEnd_toEndOf="@+id/h_top"
+            app:layout_constraintHorizontal_bias="0.701"
+            app:layout_constraintStart_toStartOf="@+id/h_top"
+            app:layout_constraintTop_toTopOf="@+id/h_top"
+            app:layout_constraintVertical_bias="1.78"
+            tools:ignore="LabelFor" />
+
+
+        <ImageButton
+            android:id="@+id/h_Kisaname_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/arrow_box"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/h_Kisaname"
+            app:layout_constraintEnd_toEndOf="@+id/h_Kisaname"
+            app:layout_constraintHorizontal_bias="0.989"
+            app:layout_constraintStart_toStartOf="@+id/h_Kisaname"
+            app:layout_constraintTop_toTopOf="@+id/h_Kisaname"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageButton
+            android:id="@+id/h_Kisayear_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/arrow_box"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/h_Kisayear"
+            app:layout_constraintEnd_toEndOf="@+id/h_Kisayear"
+            app:layout_constraintHorizontal_bias="0.989"
+            app:layout_constraintStart_toStartOf="@+id/h_Kisayear"
+            app:layout_constraintTop_toTopOf="@+id/h_Kisayear"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageButton
+            android:id="@+id/h_Kisaturn_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/arrow_box"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/h_Kisaturn"
+            app:layout_constraintEnd_toEndOf="@+id/h_Kisaturn"
+            app:layout_constraintHorizontal_bias="0.989"
+            app:layout_constraintStart_toStartOf="@+id/h_Kisaturn"
+            app:layout_constraintTop_toTopOf="@+id/h_Kisaturn"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageButton
+            android:id="@+id/h_next"
+            android:layout_width="250sp"
+            android:layout_height="65sp"
+            android:background="@drawable/login_button"
+            android:contentDescription="@string/sign_up"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/h_top"
+            app:layout_constraintEnd_toEndOf="@+id/h_top"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/h_top"
+            app:layout_constraintTop_toTopOf="@+id/h_top"
+            app:layout_constraintVertical_bias="0.93" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dgm"
+            android:gravity="center"
+            android:text="완료"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/h_next"
+            app:layout_constraintEnd_toEndOf="@+id/h_next"
+            app:layout_constraintHorizontal_bias="0.500"
+            app:layout_constraintStart_toStartOf="@+id/h_next"
+            app:layout_constraintTop_toTopOf="@+id/h_next"
+            app:layout_constraintVertical_bias="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

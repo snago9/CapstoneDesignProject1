@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">기사님</string>
+    <string name="login">로그인</string>
+    <string name="sign_up">회원가입</string>
+    <string name="next">다음</string>
+    <string name="name">기사님</string>
+    <string name="id">아이디:</string>
+    <string name="password">패스워드:</string>
+    <string name="rem_id">아이디 기억하기</string>
+    <string name="or">또는</string>
+    <string name="pw_check">PW 다시입력:</string>
+    <string name="nickname">닉네임</string>
+    <string name="goal">목표</string>
+    <string name="day_left">D-DAY</string>
+    <string name="kisa_name">기사 자격증</string>
+    <string name="jeongbo">정보처리산업기사</string>
+    <string name="kisa_year">기사 년도</string>
+    <string name="year_2022">2022 년도</string>
+    <string name="kisa_turn">기사 회차</string>
+    <string name="turn1">1 회차</string>
+    <string name="notifi">공지</string>
+    <string name="start">START</string>
+    <string name="five_num">5개</string>
+    <string name="test_select_page">시험 선택 페이지</string>
+    <string name="bookmark">북마크</string>
+    <string name="edit">편집</string>
+    <string name="kisa_year_turn">연도와 회차</string>
+    <string name="testing">문제</string>
+    <string name="exam_end">시험 종료</string>
+    <string name="check_result">결과 확인</string>
+    <string name="congratulaion">*축하합니다*\n\n모든 문제를 다 푸셨습니다!</string>
+    <string name="exam_score">Correct answers: %d</string>
+    <string name="ex_text">test</string>
+
+
+</resources>

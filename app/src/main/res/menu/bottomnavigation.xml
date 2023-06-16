@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/first_tab"
+        android:title="tohome"
+        android:icon="@drawable/tohome"
+        app:showAsAction="always"
+        android:enabled="true" />
+    <item
+        android:id="@+id/second_tab"
+        android:title="tocal"
+        android:icon="@drawable/tocalen"
+        app:showAsAction="always"
+        android:enabled="true"/>
+    <item
+        android:id="@+id/third_tab"
+        android:title="toanaly"
+        android:icon="@drawable/toanaly"
+        app:showAsAction="always"
+        android:enabled="true" />
+    <item
+        android:id="@+id/fourth_tab"
+        android:title="touser"
+        android:icon="@drawable/touser"
+        app:showAsAction="always"
+        android:enabled="true"/>
+
+
+</menu>

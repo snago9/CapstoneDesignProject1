@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="380dp"
+        android:layout_height="680dp"
+        android:background="@drawable/analybox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dgm"
+        android:text="막대그래프"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.463" />
+
+    <Button
+        android:id="@+id/analy_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="316dp"
+
+        android:fontFamily="@font/dgm"
+        android:text="1/2 >"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dgm"
+        android:text="원형그래프"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <ImageView
+        android:id="@+id/h_menu_box"
+        android:layout_width="390dp"
+        android:layout_height="80dp"
+        android:background="@drawable/menu_box"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.985" />
+
+    <ImageButton
+        android:id="@+id/h_tocalen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/tocalen"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/h_menu_box"
+        app:layout_constraintEnd_toEndOf="@+id/h_menu_box"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="@+id/h_menu_box"
+        app:layout_constraintTop_toTopOf="@+id/h_menu_box"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <ImageButton
+        android:id="@+id/h_toanaly"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/toanaly"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/h_menu_box"
+        app:layout_constraintEnd_toEndOf="@+id/h_menu_box"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="@+id/h_menu_box"
+        app:layout_constraintTop_toTopOf="@+id/h_menu_box"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <ImageButton
+        android:id="@+id/h_touser"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/touser"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/h_menu_box"
+        app:layout_constraintEnd_toEndOf="@+id/h_menu_box"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/h_menu_box"
+        app:layout_constraintTop_toTopOf="@+id/h_menu_box"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <ImageButton
+        android:id="@+id/h_tohome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/tohome"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/h_menu_box"
+        app:layout_constraintEnd_toEndOf="@+id/h_menu_box"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/h_menu_box"
+        app:layout_constraintTop_toTopOf="@+id/h_menu_box"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piechart"
+        android:layout_width="300sp"
+        android:layout_height="230sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
